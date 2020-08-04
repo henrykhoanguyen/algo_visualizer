@@ -1,0 +1,32 @@
+{
+  "name": "algo_visualizer",
+  "version": "1.0.0",
+  "description": "an algorithms visualizer website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix algo-visualizer-client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrykhoanguyen/algo_visualizer.git"
+  },
+  "author": "Khoa Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henrykhoanguyen/algo_visualizer/issues"
+  },
+  "homepage": "https://github.com/henrykhoanguyen/algo_visualizer#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
